@@ -1,0 +1,426 @@
+* {
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width : 100%;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Dancing Script', cursive;
+  margin: 0;
+}
+
+h1 {
+  font-size: 55px;
+  margin-bottom: 25px;
+  padding: 22px 0px 0px 55px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color :#3C523F;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+h5 {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+h6 {
+  font-size: 5px;
+  margin-bottom: 5px;
+}
+
+p {
+  margin:0;
+  margin-bottom: 15px;
+}
+
+a{
+  color: #999999;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%
+}
+/* Navigation  */
+.main-navigation{
+background-color: white;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 1;
+}
+
+.nav-links .active a   {
+  border-bottom : 2px solid #689D71;
+}
+/* Stroke */
+
+.stroke a {
+  text-transform: uppercase;
+  position: relative;
+}
+
+.stroke a:hover:after {
+    width: 100%;
+    left: 0;
+  }
+
+.stroke a:after {
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 60%;
+    position: absolute;
+    background: #689D71;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+.icons-links:hover{
+  background-color: rgba(255, 209, 189, 88%);
+  border-radius : 50%;
+  padding : 10px 5px;
+}
+
+.main-navigation .container, .main-navigation .nav-links, .logo-link, .icons-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo {
+  height: 120px;
+}
+
+.nav-links, footer li{
+  list-style-type: none;
+  margin : 0;
+  padding: 0;
+}
+
+.nav-links li{
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 17px;
+}
+
+.toggle-menu{
+  border : 1px solid #689D71;
+  border-radius : 3px;
+  background-color: white;
+  display : none;
+  padding : 10px;
+}
+
+
+/* header */
+
+header {
+  background-image: url("../images/siteheader.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 30px;
+  margin-top: 120px;
+  padding : 40px;
+}
+
+header p {
+  font-size: 20px;
+  padding-left: 55px;
+  text-align: inherit;
+}
+
+.btn-position{
+  padding-left: 26%;
+  padding-top: 30px;
+}
+
+.btn {
+  background-color: #FCFCFC;
+  border-radius: 50px;   /* permet d'arrondir les bords du bouton */
+  box-shadow: 3px 3px 10px gray; /* permet d'avoir une ombre sur les bords du bouton */
+  color: #689D71;
+  font-weight: 500;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+/* Categories */
+
+.category {
+  position: relative;
+}
+
+.category .leaf-left{
+  position: absolute;
+  left: 0%;
+  top: 26%;
+}
+
+.category .leaf-right{
+  position: absolute;
+  right: 0%;
+  bottom: -10%;
+}
+
+.d-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.img-category{
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: calc(100% /2);
+  height: 350px;
+}
+
+#makeup{
+  background-image: url("../images/categorymakeup.jpg");
+}
+
+#care{
+  background-image: url("../images/carecategory.png");
+}
+
+#accessory{
+  background-image: url("../images/accessorycategory.png");
+}
+
+.pcategoryright, .pcategoryleft{
+  border : solid;
+  border-color: #689D71;
+  height: 150px;
+}
+
+/* Permet de mettre le paragraphe et sa bordure de la catégorie à droite */
+.pcategoryright{
+  padding : 40px 70px 140px 115px;
+  margin-left: -4%;
+  margin-top: 7%;
+}
+
+/* Permet de mettre le paragraphe et sa bordure de la catégorie à gauche */
+.pcategoryleft{
+  padding : 40px 70px 140px 110px;
+  margin-right: -4%;
+  margin-top: 7%;
+}
+
+.d-flexleft{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* Produits */
+
+.center-elements{
+  color: #606260;
+  text-align: center;
+}
+
+.shop-products{
+  margin: 40px 0px;
+}
+
+.like {
+  color: #689D71;
+  font-size: 1.5rem;
+  position : absolute;
+  right: 15px;
+  top: 44px;
+}
+
+.products{
+  border-radius: 50%;
+  background-color: rgba(231, 162, 133, 16%);
+  margin: 0 15px;
+  padding : 30px;
+  position: relative;
+  text-align: center;
+  width: calc(100%/3);
+}
+
+.products button p {
+  color : #999999;
+  font-size: 11px;
+}
+
+.products:hover{
+  background-color: rgba(255, 209, 189, 88%);
+  transition: all 0.25s ease-in-out;
+  box-shadow: 3px 3px 20px #C1BCBC;
+}
+
+.price{
+  align-items: center;
+  font-weight: 500;
+  justify-content: center;
+}
+
+
+.products button{
+  border: none;
+  background: none;
+  outline-style:none;
+}
+
+/* Bandeau promotionnel */
+.greenbg{
+  align-items: center;
+  background-color: rgba(104, 157, 113, 56%);
+  justify-content: space-between;
+  position: relative;
+}
+
+.greenbg .leaf-left{
+    position: absolute;
+    left: 0%;
+    top: 40%;
+}
+
+/* Triangle blanc sur les côtés du bandeau */
+.triangle-left, .triangle-right{
+  height : 0;
+  width : 0;
+  border-top : 99px solid transparent;
+  border-bottom : 99px solid transparent;
+}
+
+.triangle-left{
+ border-left : 42px solid white;
+}
+
+.triangle-right{
+ border-right : 42px solid white;
+}
+
+.promo span{
+  color: #F48455;
+  font-weight : bold;
+}
+
+.whitebg{
+  background-color: rgba(255, 253, 253, 29%);
+  padding: 15px 20px;
+}
+
+.promo{
+  text-align: center;
+}
+
+/* Engagements */
+.graybg{
+  background-color: rgba(229, 229, 229, 54%);
+  margin-top:40px;
+  padding: 15px;
+  padding-bottom: 45px;
+}
+
+.graybg .d-flex, .graybg .p{
+  color: #606260;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+/* Footer */
+
+.greenbg .leaf-right{
+  position: absolute;
+  right: 0%;
+  top: -45%;
+}
+
+footer a, footer li{
+  color:#618567;
+  transition: 0.5s ease;
+  padding-bottom: 10px;
+}
+
+footer a:hover{
+  color : white;
+}
+footer .container {
+  align-items: center;
+  justify-content:center;
+}
+
+footer .fab{
+  font-size: 19px;
+}
+
+.newsletter{
+  background-color:rgba(255, 253, 253, 29%);
+  margin : 60px 30px;
+  padding: 25px;
+  text-align: center;
+  width: calc(100% /2.5);
+}
+
+#userMail{
+  background: transparent;
+  border : 2px solid white;
+  color: rgba(0, 0, 0, 66%);
+  outline-style: none;
+  padding: 10px 25px;
+  margin-bottom: 15px;
+}
+
+.letter{
+  right: 27%;
+  position: absolute;
+  top: 14%;
+
+}
+.logofooter{
+  position: absolute;
+  top: -11%;
+  left: 47%;
+}
+
+.anchor{
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  z-index: 1;
+}
+
+.sr-only{
+  display: none;
+}

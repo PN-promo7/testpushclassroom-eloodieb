@@ -1,0 +1,130 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+
+  .main-navigation .nav-links:first-of-type{
+  display:none;
+  }
+
+  .toggle-menu {
+  display : block
+  }
+
+  .leaf-right, .leaf-left{
+  display: none;
+  }
+
+  p {
+  font-size: 12px;
+  }
+
+  h1{
+  font-size: 35px;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+#logo {
+    height: 100px;
+}
+
+header{
+  padding : 0;
+}
+
+  header p {
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+header br{
+  display: none;
+}
+
+  .category{
+    margin-bottom: 15px;
+  }
+
+  .category .d-flex, .d-flexleft{
+  flex-direction: column;
+  }
+
+.img-category{
+  height: 180px;
+  width : 100%;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+.pcategoryright, .pcategoryleft {
+  font-size:12px;
+  margin: -5% 5% 5% 5%;
+  padding: 30px;
+  text-align: center;
+}
+
+.shop-products{
+  flex-direction: column;
+  align-items: center;
+}
+
+.products {
+    margin: 0px 20px 20px 20px;
+    padding: 35px;
+    width: 100%;
+}
+
+.triangle-left, .triangle-right{
+  display: none;
+}
+
+.engagement {
+  margin-right: 5px;
+}
+
+.engagement p{
+  font-size: 8px;
+}
+
+.logofooter {
+    top: -7%;
+    left: 40%;
+}
+
+footer.greenbg.d-flex {
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.newsletter {
+  margin-top: 55x;
+  margin-bottom: 5px;
+  width : 90%;
+}
+
+footer .container{
+  align-items: stretch;
+}
+
+footer ul{
+  font-size: 12px;
+  width: calc(100% /3);
+  padding: 0;
+}
+
+footer .center-elements{
+  text-align: left;
+}
+
+}
